@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+.header {
+    padding-top: 100px;
+    position: fixed;
+    box-shadow: 0px 8px 9px 2px rgba(0, 0, 0, 0.2);
+    padding: 0 2rem;
+    background-color: #121212f9;
+    height: 65px;
+    z-index: 1000;
+    width: 100%;
+    transition: box-shadow .3s, transform .3s, background-color .2s, color 0.3s;
+    
+}
+
+.transparent-header {
+    background-color: rgba(18, 18, 18, 0);
+    transition: box-shadow 0.2s, background-color 0.3s, transform 0.3s, color 0.3s;
+    transform:  translateY(30px);
+    box-shadow: 0px 8px 9px -45px rgba(255, 255, 255, 0);
+
+}
+
+
+.divhead{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.ahead{
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #bec3ce;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
+    transition: .4s;
+}
+.ahead:hover {
+    background-color: #121212;
+  
+    color: #28a745;
+    
+}
+.adivhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 99px;
+}
+.nav-first{
+    position: relative;
+    cursor: pointer;
+}
+#home-cat{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #0e7a27;
+    left: 0;
+    right: -10px;
+    padding: 8px 15px 10px;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 75%);
+    border-radius: 5px;
+    z-index: 10;
+    transform: translateY(8.7%);
+}
+#home-cat::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #0e7a27; 
+    display: block;
+    top: -4px;
+    bottom: auto;
+    position: absolute;
+    left: 39px;
+}
+.op{
+    display: block !important;
+}
+.p-item{
+    transition: all 0.5s;
+}
+.p-item:hover{
+    color: #28a745;
+    transition: all 0.5s;
+}
+.li-item{
+    padding: 13px 0;
+    border-bottom: 1px solid #bec3ce;
+}
+.li-item:last-child{
+    border-bottom: none;
+}
+.li-item p{
+    color: #d3d3d3;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.imghead{
+    padding: 10px  99px;
+    width: 77;
+    height: 58;
+}
+
